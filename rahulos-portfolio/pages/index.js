@@ -72,7 +72,7 @@ export default function Home() {
               </div>
               
               {/* Chat Assistant Overlay */}
-              <ChatAssistant />
+              <ChatAssistant setActiveTab={setActiveTab} />
             </motion.div>
           )}
         </AnimatePresence>
