@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import BootScreen from "@/components/BootScreen";
-import RoomScene from "@/components/RoomScene";
+import HumanScene from "@/components/HumanScene";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import About from "@/components/About";
@@ -61,7 +61,7 @@ export default function Home() {
 
                 <div className="flex-1 flex flex-col md:flex-row items-center justify-center py-10 relative">
                     <AnimatePresence mode="wait">
-                      {activeTab === "home" && <RoomScene key="home" setActiveTab={setActiveTab} />}
+                      {activeTab === "home" && <HumanScene key="home" setActiveTab={setActiveTab} />}
                       {activeTab === "projects" && <Projects key="projects" />}
                       {activeTab === "skills" && <Skills key="skills" />}
                       {activeTab === "about" && <About key="about" />}
